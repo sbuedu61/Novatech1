@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech - Medication Reminder and Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+	
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#reminders">Reminders</a></li>
+                <li><a href="#suggestions">Suggestions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to NovaTech</h1>
+            <p>Your trusted partner for medication reminders and suggestions.</p>
+        </section>
+        <section id="reminders">
+            <h1>Medication Reminders</h1>
+            <form id="reminder-form">
+                <label for="medication-name">Medication Name:</label>
+                <input type="text" id="medication-name" name="medication-name">
+                <label for="reminder-time">Reminder Time:</label>
+                <input type="time" id="reminder-time" name="reminder-time">
+                <button id="set-reminder-btn">Set Reminder</button>
+            </form>
+            <ul id="reminder-list"></ul>
+        </section>
+        <section id="suggestions">
+            <h1>Medication Suggestions</h1>
+            <form id="suggestion-form">
+                <label for="medication-name-suggestion">Medication Name:</label>
+                <input type="text" id="medication-name-suggestion" name="medication-name-suggestion">
+                <button id="get-suggestions-btn">Get Suggestions</button>
+            </form>
+            <ul id="suggestion-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
